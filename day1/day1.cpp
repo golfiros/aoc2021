@@ -38,11 +38,7 @@ int main (int argc, char** argv) {
 
     //Read data from file into vector
     std::vector<uint16_t> depths;
-    std::string value;
-
-    while(getline(file, value)) {
-        depths.push_back(std::stoi(value));
-    }
+    for(std::string value; std::getline(file, value); depths.push_back(std::stoi(value))) {}
 
     //Don't need the file anymore.
     file.close();
