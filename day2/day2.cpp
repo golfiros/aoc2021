@@ -20,7 +20,7 @@ std::vector<std::string> split(std::string const &in) {
 int main (int argc, char** argv) {
     // First argument is filename
     if (argc != 2) {
-        std::cout << "Please input filename" << std::endl;
+        std::cerr << "Unexpected number of arguments" << std::endl;
         return 1;
     }
 
@@ -29,7 +29,7 @@ int main (int argc, char** argv) {
     file.open(argv[1]);
 
     if (!file.is_open()){
-        std::cout << "Unable to open file " << argv[1] << std::endl;
+        std::cout << "Unable to open file '" << argv[1] << "'" << std::endl;
         return 1;
     }
 
