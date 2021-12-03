@@ -33,10 +33,6 @@ int main (int argc, char** argv) {
         return 1;
     }
 
-    //Read data from file into vector
-    std::vector<std::string> commands;
-    std::string value;
-
     //Just read each command and apply its action
     uint16_t hor = 0;
     uint16_t aim = 0;

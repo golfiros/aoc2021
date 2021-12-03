@@ -55,5 +55,5 @@ int main (int argc, char** argv) {
     //And now we print the filtered jump count
     std::cout << "Filtered Jumps: " << jumps(fDepths) << std::endl;
 
-    return EXIT_SUCCESS;
+    return 0;
 }
